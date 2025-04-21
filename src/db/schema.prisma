@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:Am7pgcrQCPRjSCvP@db.ppwxqmqsjrrbunyrqmzj.supabase.co:5432/postgres"
+  url      = env("DATABASE_URL")
   // npx prisma migrate dev --name init
 }
 
